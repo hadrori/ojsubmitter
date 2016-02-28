@@ -11,7 +11,8 @@ module OJS
           expect(@output.string).to eq "yay\n"
         end
       end
-      context "log level is debug" do
+
+      context "log lovel is debug" do
         it "prints info" do
           @output = StringIO.new
           Logger.configure(:debug, @output)
@@ -20,21 +21,43 @@ module OJS
         end
       end
     end
+
     describe "#debug" do
       context "log level is info" do
-        it "does not print debug" do
+        it "prints info" do
           @output = StringIO.new
           Logger.configure(:info, @output)
           Logger.debug("yay")
-          expect(@output.string).not_to eq "yay\n"
+          expect(@output.string).to eq ""
         end
       end
-      context "log level is debug" do
-        it "prints debug" do
+
+      context "log lovel is debug" do
+        it "prints info" do
           @output = StringIO.new
           Logger.configure(:debug, @output)
           Logger.debug("yay")
           expect(@output.string).to eq "yay\n"
+        end
+      end
+    end
+
+    describe "#error" do
+      context "log level is info" do
+        it "prints error" do
+          @output = StringIO.new
+          Logger.configure(:info, @output)
+          Logger.error("yay")
+          expect(@output.string).to eq "\e[31m[ERROR] yay\e[0m\n"
+        end
+      end
+
+      context "log lovel is debug" do
+        it "prints error" do
+          @output = StringIO.new
+          Logger.configure(:debug, @output)
+          Logger.error("yay")
+          expect(@output.string).to eq "\e[31m[ERROR] yay\e[0m\n"
         end
       end
     end

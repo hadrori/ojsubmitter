@@ -6,10 +6,8 @@ module OJS
       def open_browser(url)
         system open_browser_command, url
       rescue UnknownOSError => err
-        Logger.info "Open browser command for this platform is unknow, please specify the command from config.yml or options."
+        Logger.error "Open browser command for this platform is unknow"
       end
-
-      private
 
       def open_browser_command
         case RUBY_PLATFORM.downcase
@@ -20,7 +18,7 @@ module OJS
         when /linux/
           'xdg-open'
         else
-          raise UnknowOSError
+          raise UnknownOSError
         end
       end
     end

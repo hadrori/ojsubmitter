@@ -37,8 +37,8 @@ module OJS
         @hclient ||= HTTPClient.new
       end
 
-      def user_name
-        @config['user_name']
+      def user
+        @config['user']
       end
 
       def password

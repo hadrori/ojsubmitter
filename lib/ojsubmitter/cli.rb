@@ -21,7 +21,7 @@ module OJS
     option :file,
            :aliases => "-f",
            :desc    => "Specify your source file to submit."
-    option :user_name,
+    option :user,
            :aliases => "-u",
            :desc    => "Specify your user_name."
     option :password,
@@ -40,9 +40,10 @@ module OJS
     end
 
     private
-    def self.show_judge_list
+    def show_judge_list
       Logger.info "You can specify a judge with option --judge or -j"
-      Judge.valid_judges.each { |judge| Logger.info "\t#{judge}" }
+      Logger.info "Available judges are below."
+      Judge.valid_judges.each { |judge| Logger.info judge }
     end
   end
 end
