@@ -1,0 +1,4 @@
+judge: aoj
+language: C++11
+user:
+password:

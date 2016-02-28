@@ -1,5 +1,6 @@
 require 'ojsubmitter'
 require 'thor'
+require 'yaml'
 
 module OJS
   class CLI < Thor
@@ -30,20 +31,43 @@ module OJS
     option :language,
            :aliases => "-l",
            :desc    => "Specify a programming language."
+    option :nostatus,
+           :aliases => "-n",
+           :type    => :boolean,
+           :desc    => "Don't show status page after submitting."
     def submit
-      case options[:judge]
+      @config = set_options_from_config_file(options.to_h)
+      case @config['judge']
       when 'aoj'
-        OJS::AOJ.submit options
+        OJS::AOJ.submit @config
       else
-        show_judge_list
+        list
       end
     end
 
-    private
-    def show_judge_list
-      Logger.info "You can specify a judge with option --judge or -j"
+    SAMPLE_CONFIG_PATH = File.join(OJS::ROOT_DIR, '.ojsconf.yml.sample')
+    CONFIG_PATH = File.join(ENV['HOME'], '.ojsconf.yml')
+
+    desc "init", "Create a config file."
+    def init
+      unless File.exist?(CONFIG_PATH)
+        FileUtils.copy(SAMPLE_CONFIG_PATH, CONFIG_PATH)
+      end
+    end
+
+    desc "list", "Show the list of enable judges."
+    def list
       Logger.info "Available judges are below."
       Judge.valid_judges.each { |judge| Logger.info judge }
+    end
+
+    private
+    def set_options_from_config_file(config)
+      config_file = YAML.load_file(CONFIG_PATH)
+      config_file.each do |key,val|
+        config[key] ||= val
+      end
+      config
     end
   end
 end

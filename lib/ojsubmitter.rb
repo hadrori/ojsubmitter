@@ -4,5 +4,5 @@ require "ojsubmitter/util"
 require 'ojsubmitter/judge/aoj'
 
 module OJS
-  # Your code goes here...
+  ROOT_DIR = File.expand_path(File.join(__FILE__, '..', '..'))
 end
