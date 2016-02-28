@@ -1,11 +1,7 @@
 require 'spec_helper'
 
-describe Ojsubmitter do
+describe OJS do
   it 'has a version number' do
-    expect(Ojsubmitter::VERSION).not_to be nil
-  end
-
-  it 'does something useful' do
-    expect(false).to eq(true)
+    expect(OJS::VERSION).not_to be nil
   end
 end
