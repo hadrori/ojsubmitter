@@ -16,8 +16,8 @@ module OJS
       def login
         res = hclient.post(
           'http://poj.org/login',
-          { :user_id1  => user,
-            :password1 => password }
+          { user_id1:  user,
+            password1: password }
         )
         raise Judge::LoginFailedError if res.body =~ /Login failed!/
         Logger.info "Logged in successfully."
@@ -26,10 +26,10 @@ module OJS
       def post
         res = hclient.post(
           'http://poj.org/submit',
-          { :problem_id => problem_id,
-            :language   => language,
-            :source     => code,
-            :encoded    => 'UTF-8',
+          { problem_id: problem_id,
+            language:   language,
+            source:     code,
+            encoded:    'UTF-8',
           }
         )
         raise Judge::SubmissionError if res.body =~ /(Error Occurred)|(Error report)/

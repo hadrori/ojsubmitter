@@ -20,11 +20,11 @@ module OJS
       def post
         hclient.post(
           'http://judge.u-aizu.ac.jp/onlinejudge/servlet/Submit',
-          { :userID     => user,
-            :password   => password,
-            :problemNO  => problem_id,
-            :language   => language,
-            :sourceCode => code }
+          { userID:     user,
+            password:   password,
+            problemNO:  problem_id,
+            language:   language,
+            sourceCode: code }
         )
       end
 

@@ -8,7 +8,7 @@ module OJS
 
     class << self
       def valid_judges
-        %w[AOJ POJ SPOJ]
+        %w[AOJ POJ SPOJ Codeforces]
       end
 
       def login

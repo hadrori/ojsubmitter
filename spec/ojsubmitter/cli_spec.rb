@@ -45,5 +45,41 @@ module OJS
         end
       end
     end
+
+    describe '#judge_class' do
+      let(:cli) { CLI.new }
+      context 'valid judge' do
+        before do
+          cli.instance_variable_set(:@config, { 'judge' => 'aoj' })
+        end
+
+        it 'returns target judge class' do
+          expect(cli.send(:judge_class)).to be OJS::AOJ
+        end
+      end
+
+      context 'invalid judge' do
+        before do
+          cli.instance_variable_set(:@config, { 'judge' => 'fox' })
+        end
+
+        it 'returns target judge class' do
+          expect { cli.send(:judge_class) }.to raise_error CLI::UnknownJudgeError
+        end
+      end
+    end
+
+    describe '#set_options_from_config_file' do
+      include FakeFS::SpecHelpers
+      let(:option) { { 'judge' => 'aoj', 'language' => 'ruby' } }
+      before do
+        FileUtils.mkdir_p(ENV['HOME'])
+        File.write(OJS::CLI::CONFIG_PATH, option.to_yaml)
+      end
+
+      it 'returns option' do
+        expect(CLI.new.send(:set_options_from_config_file, {})).to eq option
+      end
+    end
   end
 end
