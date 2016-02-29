@@ -4,6 +4,9 @@ This script allows you submit a source code to the online judge from CLI.
 
 ### Enabled Judges
 - [AIZU ONLINE JUDGE](http://judge.u-aizu.ac.jp)
+- [PKU JudgeOnline](http://poj.org)
+
+You can also get this list from `ojsubmitter list` command.
 
 ## Installation
 
@@ -21,9 +24,25 @@ Or install it yourself as:
 
     $ gem install ojsubmitter
 
+## Configure
+
+Please run below command to create config file to home directory.
+You can set the default options of ojsubmitter command.
+
+    $ ojsubmitter init
+
+
 ## Usage
 
-Please read the help command.
+#### Submit
+
+    $ ojsubmitter -j [JUDGE_NAME] -u [USER_NAME] -p [PASSWORD] -l [LANGUAGE] -f [SOURCE_FILE]
+
+To omit these options, you can use config file `.ojsconf.yml` located in your home directory.
+
+#### Help
+
+Please read the help command to get more info.
 
     $ ojsubmitter help
 
