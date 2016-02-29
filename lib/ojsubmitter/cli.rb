@@ -37,9 +37,11 @@ module OJS
            :desc    => "Don't show status page after submitting."
     def submit
       @config = set_options_from_config_file(options.to_h)
-      case @config['judge']
+      case @config['judge'].to_s.downcase
       when 'aoj'
         OJS::AOJ.submit @config
+      when 'poj'
+        OJS::POJ.submit @config
       else
         list
       end

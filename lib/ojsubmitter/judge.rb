@@ -3,22 +3,29 @@ require 'httpclient'
 
 module OJS
   class Judge
+    class LoginFailedError < StandardError; end
+    class SubmissionError < StandardError; end
+
     class << self
       def valid_judges
-        %w[aoj]
+        %w[AOJ POJ]
       end
 
       def login
-        false
       end
 
       def submit(*options)
         @config = options[0].to_h if options
+        login
         post
         Logger.info "Your source code has submitted successfully."
-        Logger.info "Opening browser..."
+        Logger.info "Open browser..."
         sleep 1
         open_status
+      rescue LoginFailedError => err
+        Logger.error "Login failed!"
+      rescue SubmissionError => err
+        Logger.error "Failed to submit. Check your config."
       end
 
       def post

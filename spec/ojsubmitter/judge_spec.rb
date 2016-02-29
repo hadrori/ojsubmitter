@@ -10,7 +10,7 @@ module OJS
   describe Judge do
     describe "#valid_judges" do
       it "returns enabled judges" do
-        expect(Judge.valid_judges).to eq(%w[aoj])
+        expect(Judge.valid_judges).to eq(%w[AOJ POJ])
       end
     end
 
