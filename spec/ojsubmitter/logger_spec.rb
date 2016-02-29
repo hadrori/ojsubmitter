@@ -2,22 +2,22 @@ require 'spec_helper'
 
 module OJS
   describe Logger do
+    let(:output) { StringIO.new }
+
     describe "#info" do
       context "log level is info" do
         it "prints info" do
-          @output = StringIO.new
-          Logger.configure(:info, @output)
+          Logger.configure(:info, output)
           Logger.info("yay")
-          expect(@output.string).to eq "yay\n"
+          expect(output.string).to eq "yay\n"
         end
       end
 
       context "log lovel is debug" do
         it "prints info" do
-          @output = StringIO.new
-          Logger.configure(:debug, @output)
+          Logger.configure(:debug, output)
           Logger.info("yay")
-          expect(@output.string).to eq "yay\n"
+          expect(output.string).to eq "yay\n"
         end
       end
     end
@@ -25,19 +25,17 @@ module OJS
     describe "#debug" do
       context "log level is info" do
         it "prints info" do
-          @output = StringIO.new
-          Logger.configure(:info, @output)
+          Logger.configure(:info, output)
           Logger.debug("yay")
-          expect(@output.string).to eq ""
+          expect(output.string).to eq ""
         end
       end
 
       context "log lovel is debug" do
         it "prints info" do
-          @output = StringIO.new
-          Logger.configure(:debug, @output)
+          Logger.configure(:debug, output)
           Logger.debug("yay")
-          expect(@output.string).to eq "yay\n"
+          expect(output.string).to eq "yay\n"
         end
       end
     end
@@ -45,19 +43,17 @@ module OJS
     describe "#error" do
       context "log level is info" do
         it "prints error" do
-          @output = StringIO.new
-          Logger.configure(:info, @output)
+          Logger.configure(:info, output)
           Logger.error("yay")
-          expect(@output.string).to eq "\e[31m[ERROR] yay\e[0m\n"
+          expect(output.string).to eq "\e[31m[ERROR] yay\e[0m\n"
         end
       end
 
       context "log lovel is debug" do
         it "prints error" do
-          @output = StringIO.new
-          Logger.configure(:debug, @output)
+          Logger.configure(:debug, output)
           Logger.error("yay")
-          expect(@output.string).to eq "\e[31m[ERROR] yay\e[0m\n"
+          expect(output.string).to eq "\e[31m[ERROR] yay\e[0m\n"
         end
       end
     end

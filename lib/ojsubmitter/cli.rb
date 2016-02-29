@@ -42,6 +42,8 @@ module OJS
         OJS::AOJ.submit @config
       when 'poj'
         OJS::POJ.submit @config
+      when 'spoj'
+        OJS::SPOJ.submit @config        
       else
         list
       end
