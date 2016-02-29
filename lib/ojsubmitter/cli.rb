@@ -33,6 +33,9 @@ module OJS
     option :language,
            aliases: "-l",
            desc:    "Specify a programming language."
+    option :problem_id,
+           aliases: "-i",
+           desc:    "Specify a problem id."
     option :nostatus,
            aliases: "-n",
            type:    :boolean,
