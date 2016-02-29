@@ -1,7 +1,11 @@
 require 'simplecov'
-SimpleCov.start do
-  add_filter "/vendor/"
-end
+require 'coveralls'
+SimpleCov.formatters = [
+  SimpleCov::Formatter::HTMLFormatter,
+  Coveralls::SimpleCov::Formatter,
+]
+SimpleCov.start
+
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'ojsubmitter'
 require 'ojsubmitter/cli'
