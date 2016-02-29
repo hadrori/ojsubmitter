@@ -1,6 +1,12 @@
 # Ojsubmitter
 
-This script allows you submit a source code to the online judge from CLI.
+[![Gem Version](https://badge.fury.io/rb/ojsubmitter.svg)](https://badge.fury.io/rb/ojsubmitter) [![Build Status](https://travis-ci.org/hadrori/ojsubmitter.svg?branch=master)](https://travis-ci.org/hadrori/ojsubmitter) [![Coverage Status](https://coveralls.io/repos/github/hadrori/ojsubmitter/badge.svg?branch=master)](https://coveralls.io/github/hadrori/ojsubmitter?branch=master) [![Dependency Status](https://gemnasium.com/hadrori/ojsubmitter.svg)](https://gemnasium.com/hadrori/ojsubmitter)
+
+Submit a source code to the online judge from CLI.
+
+## Requirements
+
+- ruby >= 2.0.0
 
 ### Enabled Judges
 - [AIZU ONLINE JUDGE](http://judge.u-aizu.ac.jp)
