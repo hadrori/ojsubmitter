@@ -11,6 +11,7 @@ Submit a source code to the online judge from CLI.
 ### Enabled Judges
 - [AIZU ONLINE JUDGE](http://judge.u-aizu.ac.jp)
 - [PKU JudgeOnline](http://poj.org)
+- [Sphere online judge](http://www.spoj.com)
 
 You can also get this list from `ojsubmitter list` command.
 
