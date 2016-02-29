@@ -4,6 +4,7 @@ require "ojsubmitter/util"
 require 'ojsubmitter/judge/aoj'
 require 'ojsubmitter/judge/poj'
 require 'ojsubmitter/judge/spoj'
+require 'ojsubmitter/judge/codeforces'
 
 module OJS
   ROOT_DIR = File.expand_path(File.join(__FILE__, '..', '..'))

@@ -4,6 +4,8 @@ require 'yaml'
 
 module OJS
   class CLI < Thor
+    class UnknownJudgeError < StandardError; end
+
     default_command :submit
 
     def initialize(*)
@@ -17,36 +19,29 @@ module OJS
 
     desc "submit", "Submit your source code."
     option :judge,
-           :aliases => "-j",
-           :desc    => "Specify a target judge."
+           aliases: "-j",
+           desc:    "Specify a target judge."
     option :file,
-           :aliases => "-f",
-           :desc    => "Specify your source file to submit."
+           aliases: "-f",
+           desc:    "Specify your source file to submit."
     option :user,
-           :aliases => "-u",
-           :desc    => "Specify your user_name."
+           aliases: "-u",
+           desc:    "Specify your user_name."
     option :password,
-           :aliases => "-p",
-           :desc    => "Specify your password."
+           aliases: "-p",
+           desc:    "Specify your password."
     option :language,
-           :aliases => "-l",
-           :desc    => "Specify a programming language."
+           aliases: "-l",
+           desc:    "Specify a programming language."
     option :nostatus,
-           :aliases => "-n",
-           :type    => :boolean,
-           :desc    => "Don't show status page after submitting."
+           aliases: "-n",
+           type:    :boolean,
+           desc:    "Don't show status page after submitting."
     def submit
       @config = set_options_from_config_file(options.to_h)
-      case @config['judge'].to_s.downcase
-      when 'aoj'
-        OJS::AOJ.submit @config
-      when 'poj'
-        OJS::POJ.submit @config
-      when 'spoj'
-        OJS::SPOJ.submit @config        
-      else
-        list
-      end
+      judge_class.submit @config
+    rescue UnknownJudgeError => err
+      list
     end
 
     SAMPLE_CONFIG_PATH = File.join(OJS::ROOT_DIR, '.ojsconf.yml.sample')
@@ -72,6 +67,17 @@ module OJS
         config[key] ||= val
       end
       config
+    end
+
+    def judge_class
+      case @config['judge'].to_s.downcase
+      when 'aoj', 'poj', 'spoj'
+        OJS.const_get @config['judge'].upcase
+      when 'codeforces', 'cf'
+        OJS::Codeforces
+      else
+        raise UnknownJudgeError
+      end
     end
   end
 end

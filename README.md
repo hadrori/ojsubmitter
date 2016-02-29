@@ -12,6 +12,7 @@ Submit a source code to the online judge from CLI.
 - [AIZU ONLINE JUDGE](http://judge.u-aizu.ac.jp)
 - [PKU JudgeOnline](http://poj.org)
 - [Sphere online judge](http://www.spoj.com)
+- [Codeforces](http://codeforces.com)
 
 You can also get this list from `ojsubmitter list` command.
 

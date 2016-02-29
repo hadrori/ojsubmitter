@@ -63,8 +63,8 @@ module OJS
       def login
         res = hclient.post(
           'http://www.spoj.com/login/',
-          { :login_user => user,
-            :password   => password }
+          { login_user: user,
+            password:   password }
         )
         raise Judge::LoginFailedError if res.body =~ /Authentication failed!/
         Logger.info "Logged in successfully."
@@ -73,9 +73,9 @@ module OJS
       def post
         res = hclient.post(
           'http://www.spoj.com/submit/complete/',
-          { :problemcode => problem_id, 
-            :lang        => language,
-            :file        => code }
+          { problemcode: problem_id, 
+            lang:        language,
+            file:        code }
         )
         raise Judge::SubmissionError if res.body =~ /Error/
       end
