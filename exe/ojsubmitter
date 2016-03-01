@@ -5,5 +5,7 @@ if File.exists?(File.join(File.expand_path('../..', __FILE__), '.gitignore'))
   $:.unshift(ojs_path)
 end
 
+$VERBOSE = nil
+
 require 'ojsubmitter/cli'
 OJS::CLI.start

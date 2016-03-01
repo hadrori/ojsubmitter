@@ -5,10 +5,11 @@ module OJS
   class Judge
     class LoginFailedError < StandardError; end
     class SubmissionError < StandardError; end
+    class UnknownLanguageError < StandardError; end
 
     class << self
       def valid_judges
-        %w[AOJ POJ SPOJ Codeforces]
+        %w[AOJ POJ SPOJ Codeforces AtCoder]
       end
 
       def login
@@ -26,6 +27,8 @@ module OJS
         Logger.error "Login failed!"
       rescue SubmissionError => err
         Logger.error "Failed to submit. Check your config."
+      rescue UnknownLanguageError => err
+        Logger.error "No languages are matched."
       end
 
       def post
