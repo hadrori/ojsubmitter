@@ -1,0 +1,313 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://abc001.contest.atcoder.jp/submit
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - HTTPClient/1.0 (2.7.1, ruby 2.3.0 (2015-12-25))
+      Accept:
+      - "*/*"
+      Date:
+      - Tue, 01 Mar 2016 07:55:41 GMT
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 01 Mar 2016 07:55:41 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"utf-8\">\n    <title>Submit
+        - AtCoder Beginner Contest 001 | AtCoder</title>\n    <meta name=\"viewport\"
+        content=\"width=device-width, initial-scale=1.0\">\n    <meta name=\"description\"
+        content=\"\n\">\n    <meta name=\"keyword\" content=\"AtCoder,アットコーダー,あっとこーだー,プログラミングコンテスト\n\">\n
+        \   <meta name=\"author\" content=\"Atcoder\" />\n    <meta name=\"copyright\"
+        content=\"Copyright (C) 2012 Atcoder\" />\n    <meta name=\"format-detection\"
+        content=\"telephone=no\" />\n\n    <link rel=\"stylesheet\" type=\"text/css\"
+        href=\"/css/all.css?v=2\">\n    <link rel=\"stylesheet\" type=\"text/css\"
+        href=\"/css/print.css?v=1\" media=\"print\">\n        <!--[if lt IE 9]>\n
+        \     <script src=\"//html5shim.googlecode.com/svn/trunk/html5.js\"></script>\n
+        \   <![endif]-->\n\n    <script src=\"/js/jquery.js\"></script>\n    <link
+        rel=\"shortcut icon\" href=\"/img/favicon.ico\">\n\n    <script type=\"text/javascript\">\n\n
+        \ var _gaq = _gaq || [];\n  _gaq.push(['_setAccount', 'UA-30554866-3']);\n
+        \ _gaq.push(['_setDomainName', 'atcoder.jp']);\n  _gaq.push(['_trackPageview']);\n\n
+        \ (function() {\n    var ga = document.createElement('script'); ga.type =
+        'text/javascript'; ga.async = true;\n    ga.src = ('https:' == document.location.protocol
+        ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';\n    var
+        s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga,
+        s);\n  })();\n\n</script>    \n    <!--[if lt IE 9]><style>.navbar-fixed-top{
+        position: relative!important; }</style><![endif]-->\n\n  </head>\n\n\n  <body>\n
+        \         <div class=\"navbar navbar-fixed-top\">\n  <div class=\"navbar-inner\">\n
+        \   <div class=\"container\">\n      <a class=\"btn btn-navbar\" data-toggle=\"collapse\"
+        data-target=\".nav-collapse\">\n        <span class=\"icon-bar\"></span>\n
+        \       <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n
+        \     </a>\n              <a class=\"brand\" href=\"/\"><span class=\"contest-name\">AtCoder
+        Beginner Contest 001</span><span class=\"bland-small\"><time>2013/10/12 12:00:00
+        +0000</time> ~ <time>2013/10/12 14:00:00 +0000</time></span></a>\n      \n
+        \     <div class=\"nav-collapse\">\n                <ul class=\"nav\">\n          <li
+        class=\"divider-vertical\"></li>\n          <li><a href=\"http://atcoder.jp\"
+        target=\"_blank\">AtCoderへ戻る</a></li>\n        </ul>\n                            <ul
+        \ id=\"nav-right-logined\" class=\"nav pull-right\" style=\"display:none;\">\n
+        \           <li class=\"dropdown\">\n              <a href=\"#\" lang=\"ja\"
+        class=\"dropdown-toggle static-nav-language-selector-dropdown\" data-toggle=\"dropdown\"
+        style=\"display:none;\">\n                <i class=\"flag-ja\"></i> 日本語 <b
+        class=\"caret\"></b>\n              </a>\n              <a href=\"#\" lang=\"en\"
+        class=\"dropdown-toggle static-nav-language-selector-dropdown\"  data-toggle=\"dropdown\"
+        style=\"display:none;\">\n                <i class=\"flag-en\"></i> English
+        <b class=\"caret\"></b>\n              </a>\n              <a href=\"#\" lang=\"ko\"
+        class=\"dropdown-toggle static-nav-language-selector-dropdown\"  data-toggle=\"dropdown\"
+        style=\"display:none;\">\n                <i class=\"flag-ko\"></i> 한국어 <b
+        class=\"caret\"></b>\n              </a>\n              <ul class=\"dropdown-menu\">\n
+        \               <li> <a lang=\"ja\" class=\"static-nav-language-selector\"
+        href=\"#\"><i class=\"flag-ja\"></i> 日本語</a></li>\n                <li> <a
+        lang=\"en\" class=\"static-nav-language-selector\" href=\"#\"><i class=\"flag-en\"></i>
+        English</a></li>\n                <li> <a lang=\"ko\" class=\"static-nav-language-selector\"
+        href=\"#\"><i class=\"flag-ko\"></i> 한국어</a></li>\n              </ul>\n            </li>\n
+        \           <li class=\"divider-vertical\"></li>\n            <li class=\"dropdown\">\n
+        \             <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><i
+        class=\"icon-cog icon-white\"></i> <span id=\"nav-right-username\"></span><b
+        class=\"caret\"></b></a>\n              <ul class=\"dropdown-menu\">\n                <li><a
+        href=\"/me\">マイプロフィール</a></li>\n                                \t<li><a href=\"/settings\"><span
+        class=\"lang\"><span class=\"lang-en\">Settings</span><span class=\"lang-ja\">設定</span></span></a></li>\n
+        \               \t                \t<li><a href=\"/settings/password\"><span
+        class=\"lang\"><span class=\"lang-en\">Change password</span><span class=\"lang-ja\">パスワードの変更</span></span></a></li>\n
+        \               \t<li class=\"divider\"></li>\n                                <li><a
+        href=\"/logout\"><span class=\"lang\"><span class=\"lang-en\">Sign out</span><span
+        class=\"lang-ja\">ログアウト</span></span></a></li>\n             </ul>\n            </li>\n
+        \         </ul>\n          <ul id=\"nav-right-not-login\" class=\"nav pull-right\"
+        style=\"display:none;\">\n            <li class=\"dropdown\">\n              <a
+        href=\"#\" lang=\"ja\" class=\"dropdown-toggle static-nav-language-selector-dropdown\"
+        data-toggle=\"dropdown\" style=\"display:none;\">\n                <i class=\"flag-ja\"></i>
+        日本語 <b class=\"caret\"></b>\n              </a>\n              <a href=\"#\"
+        lang=\"en\" class=\"dropdown-toggle static-nav-language-selector-dropdown\"
+        \ data-toggle=\"dropdown\" style=\"display:none;\">\n                <i class=\"flag-en\"></i>
+        English <b class=\"caret\"></b>\n              </a>\n              <a href=\"#\"
+        lang=\"ko\" class=\"dropdown-toggle static-nav-language-selector-dropdown\"
+        \ data-toggle=\"dropdown\" style=\"display:none;\">\n                <i class=\"flag-ko\"></i>
+        한국어 <b class=\"caret\"></b>\n              </a>\n              <ul class=\"dropdown-menu\">\n
+        \               <li> <a lang=\"ja\" class=\"static-nav-language-selector\"
+        href=\"#\"><i class=\"flag-ja\"></i> 日本語</a></li>\n                <li> <a
+        lang=\"en\" class=\"static-nav-language-selector\" href=\"#\"><i class=\"flag-en\"></i>
+        English</a></li>\n                <li> <a lang=\"ko\" class=\"static-nav-language-selector\"
+        href=\"#\"><i class=\"flag-ko\"></i> 한국어</a></li>\n              </ul>\n            </li>\n
+        \                       <li class=\"divider-vertical\"></li>\n            <li><a
+        href=\"/register\"><span class=\"lang\"><span class=\"lang-en\">Sign up</span><span
+        class=\"lang-ja\">新規登録</span></span></a></li>\n                        <li
+        class=\"divider-vertical\"></li>\n            <li><a href=\"/login\"><span
+        class=\"lang\"><span class=\"lang-en\">Sign in</span><span class=\"lang-ja\">ログイン</span></span></a></li>\n
+        \         </ul>\n      </div>\n    </div>\n  </div>\n</div>\n    <div class=\"modal
+        hide fade\" style=\"display:none;\" id=\"modal-contest-end\">\n  <div class=\"modal-header\">\n
+        \   <a class=\"close\" data-dismiss=\"modal\">×</a>\n    <h3><span class=\"lang\"><span
+        class=\"lang-en\">AtCoder Beginner Contest 001 has ended</span><span class=\"lang-ja\">AtCoder
+        Beginner Contest 001が終了しました</span></span></h3>\n  </div>\n  <div class=\"modal-body\">\n
+        \   <p><span class=\"lang\"><span class=\"lang-en\">Contest has ended</span><span
+        class=\"lang-ja\">コンテスト終了です</span></span></p>\n  </div>\n  <div class=\"modal-footer\">\n
+        \   <a href=\"#\" class=\"btn\" data-dismiss=\"modal\"><span class=\"lang\"><span
+        class=\"lang-en\">Close</span><span class=\"lang-ja\">閉じる</span></span></a>\n
+        \ </div>\n</div>\n\n<div class=\"modal hide fade\" style=\"display:none;\"
+        id=\"modal-contest-begin\">\n  <div class=\"modal-header\">\n    <a class=\"close\"
+        data-dismiss=\"modal\">×</a>\n    <h3><span class=\"lang\"><span class=\"lang-en\">AtCoder
+        Beginner Contest 001 is now opening</span><span class=\"lang-ja\">AtCoder
+        Beginner Contest 001の開催時間になりました</span></span></h3>\n  </div>\n  <div class=\"modal-body\">\n
+        \   <p><span class=\"lang\"><span class=\"lang-en\">Contest has started</span><span
+        class=\"lang-ja\">問題一覧のページへ移動してください</span></span></p>\n  </div>\n  <div class=\"modal-footer\">\n
+        \   <a href=\"/assignments\" class=\"btn btn-primary\"><span class=\"lang\"><span
+        class=\"lang-en\">Go to the task list page</span><span class=\"lang-ja\">問題一覧のページへ移動</span></span></a>\n
+        \ </div>\n</div>\n    \n    <div id=\"outer-inner\" class=\"container\">\n
+        \     <h1 class=\"site-title\">\n          AtCoder Beginner Contest 001\n
+        \     </h1>\n                      <time style=\"display:none\" id=\"contest-start-time\">2013/10/12
+        12:00:00 +0000</time>\n        <time style=\"display:none\" id=\"contest-end-time\">2013/10/12
+        14:00:00 +0000</time>\n        <time style=\"display:none\" id=\"server-current-time\">2016/03/01
+        07:55:41 +0000</time>\n\n            \n      <ul class=\"nav nav-tabs\">\n
+        \                           <li><a href=\"http://abc001.contest.atcoder.jp/\"><i
+        class=\"icon-home\"></i> <span class=\"lang\"><span class=\"lang-en\">Home</span><span
+        class=\"lang-ja\">トップページ</span><span class=\"lang-ko\">톱 페이지</span></span></a></li>\n
+        \                                         <li><a href=\"http://abc001.contest.atcoder.jp/assignments\"><i
+        class=\"icon-list-alt\"></i> <span class=\"lang\"><span class=\"lang-en\">Tasks</span><span
+        class=\"lang-ja\">問題</span><span class=\"lang-ko\">문제</span></span></a></li>\n
+        \                                         <li class=\"active\"><a href=\"https://abc001.contest.atcoder.jp/submit\"><i
+        class=\"icon-upload\"></i> <span class=\"lang\"><span class=\"lang-en\">Submit</span><span
+        class=\"lang-ja\">提出</span><span class=\"lang-ko\">제출</span></span></a></li>\n
+        \                                         <li><a href=\"http://abc001.contest.atcoder.jp/clarifications\"><i
+        class=\"icon-question-sign\"></i> <span class=\"lang\"><span class=\"lang-en\">Clarifications</span><span
+        class=\"lang-ja\">質問</span><span class=\"lang-ko\">질문</span></span></a></li>\n
+        \                                         <li class=\"dropdown\">\n            <a
+        class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">\n              <b
+        class=\"caret\"></b><i class=\"icon-download-alt\"></i> <span class=\"lang\"><span
+        class=\"lang-en\">Results</span><span class=\"lang-ja\">結果</span><span class=\"lang-ko\">채점
+        결과</span></span>\n            </a>\n            <ul class=\"dropdown-menu\">\n
+        \                             <li><a href=\"http://abc001.contest.atcoder.jp/submissions/all\"><span
+        class=\"lang\"><span class=\"lang-en\">All submissions</span><span class=\"lang-ja\">すべての結果</span><span
+        class=\"lang-ko\">모든 결과</span></span></a></li>\n                              <li><a
+        href=\"https://abc001.contest.atcoder.jp/submissions/me\"><span class=\"lang\"><span
+        class=\"lang-en\">My submissions</span><span class=\"lang-ja\">自分の結果</span><span
+        class=\"lang-ko\">자신의 결과</span></span></a></li>\n                          </ul>\n
+        \         </li>\n                                          <li><a href=\"/standings\"><i
+        class=\"icon-user\"></i> <span class=\"lang\"><span class=\"lang-en\">Standings</span><span
+        class=\"lang-ja\">順位表</span><span class=\"lang-ko\">순위표</span></span></a></li>\n
+        \                     </ul>\n        <div id=\"alert_box\" class=\"alert alert-block\"
+        style=\"display:none\">\n  <a class=\"close\" data-dismiss=\"alert\">×</a>\n
+        \ <h4 id=\"alert_box_heading\" class=\"alert-heading\" style=\"display:none\"></h4>\n
+        \ <p id=\"alert_box_content\"></p>\n</div>\n\n      \n<div class=\"row\">\n
+        \ <div class=\"span10 offset1 well form-2c\">\n    <form class=\"form-horizontal\"
+        method=\"POST\" action=\"/submit?task_id=731\">\n      <input type=\"hidden\"
+        name=\"__session\" value=\"1145141919810893\">\n      <legend><span
+        class=\"lang\"><span class=\"lang-en\">Submit</span><span class=\"lang-ja\">提出</span><span
+        class=\"lang-ko\">제출</span></span></legend>\n      <fieldset>\n        <div
+        class=\"control-group\">\n          <label class=\"control-label\" for=\"task_id\"><span
+        class=\"lang\"><span class=\"lang-en\">Task</span><span class=\"lang-ja\">問題</span></span></label>\n
+        \         <div class=\"controls\">\n            <select name=\"task_id\" id=\"submit-task-selector\">\n
+        \                               <option value=\"731\" selected>A - 積雪深差</option>\n
+        \                               <option value=\"732\">B - 視程の通報</option>\n
+        \                               <option value=\"733\">C - 風力観測</option>\n
+        \                               <option value=\"763\">D - 感雨時刻の整理</option>\n
+        \                         </select>\n          </div>\n        </div>\n\n
+        \       <div class=\"control-group\">\n          <label class=\"control-label\"
+        for=\"language_id\"><span class=\"lang\"><span class=\"lang-en\">Language</span><span
+        class=\"lang-ja\">言語</span></span></label>\n          <div class=\"controls\">\n
+        \                                         <select class=\"submit-language-selector\"
+        name=\"language_id_731\" id=\"submit-language-selector-731\">\n              \n
+        \                                               <option value=\"14\">C++ (G++
+        4.6.4)</option>\n                                                                <option
+        value=\"13\">C (GCC 4.6.4)</option>\n                                                                <option
+        value=\"6\">D (DMD 2.060)</option>\n                                                                <option
+        value=\"3\">Java (OpenJDK 1.7.0)</option>\n                                                                <option
+        value=\"4\">C# (Mono 2.10.8.1)</option>\n                                                                <option
+        value=\"5\">PHP (PHP 5.3.10)</option>\n                                                                <option
+        value=\"21\">Python3 (3.2.3)</option>\n                                                                <option
+        value=\"7\">Python (2.7.3)</option>\n                                                                <option
+        value=\"8\">Perl (5.14.2)</option>\n                                                                <option
+        value=\"9\">Ruby (1.9.3)</option>\n                                                                <option
+        value=\"11\">Haskell (GHC 7.4.1)</option>\n                                                                <option
+        value=\"10\">C++11 (GCC 4.8.1)</option>\n                                                                <option
+        value=\"12\">Pascal (fpc 2.4.4)</option>\n                                                                <option
+        value=\"15\">JavaScript (Node.js 0.6.12)</option>\n                                                                <option
+        value=\"16\">Visual Basic (Mono 2.10.8)</option>\n                                                                <option
+        value=\"17\">Text (cat)</option>\n                                                                <option
+        value=\"22\">OCaml (3.12.1)</option>\n                                                                <option
+        value=\"23\">Scheme (Scheme 9.1)</option>\n                                                                <option
+        value=\"24\">Scala (2.9.1)</option>\n                                                                <option
+        value=\"25\">Bash (4.2.25)</option>\n                                                                <option
+        value=\"1\">C (GCC 4.4.7)</option>\n                                                                <option
+        value=\"2\">C++ (GCC 4.4.7)</option>\n                                          </select>\n
+        \                                         <select class=\"submit-language-selector\"
+        name=\"language_id_732\" id=\"submit-language-selector-732\" style=\"display:none\">\n
+        \             \n                                                <option value=\"14\">C++
+        (G++ 4.6.4)</option>\n                                                                <option
+        value=\"13\">C (GCC 4.6.4)</option>\n                                                                <option
+        value=\"6\">D (DMD 2.060)</option>\n                                                                <option
+        value=\"3\">Java (OpenJDK 1.7.0)</option>\n                                                                <option
+        value=\"4\">C# (Mono 2.10.8.1)</option>\n                                                                <option
+        value=\"5\">PHP (PHP 5.3.10)</option>\n                                                                <option
+        value=\"21\">Python3 (3.2.3)</option>\n                                                                <option
+        value=\"7\">Python (2.7.3)</option>\n                                                                <option
+        value=\"8\">Perl (5.14.2)</option>\n                                                                <option
+        value=\"9\">Ruby (1.9.3)</option>\n                                                                <option
+        value=\"11\">Haskell (GHC 7.4.1)</option>\n                                                                <option
+        value=\"10\">C++11 (GCC 4.8.1)</option>\n                                                                <option
+        value=\"12\">Pascal (fpc 2.4.4)</option>\n                                                                <option
+        value=\"15\">JavaScript (Node.js 0.6.12)</option>\n                                                                <option
+        value=\"16\">Visual Basic (Mono 2.10.8)</option>\n                                                                <option
+        value=\"17\">Text (cat)</option>\n                                                                <option
+        value=\"22\">OCaml (3.12.1)</option>\n                                                                <option
+        value=\"23\">Scheme (Scheme 9.1)</option>\n                                                                <option
+        value=\"24\">Scala (2.9.1)</option>\n                                                                <option
+        value=\"25\">Bash (4.2.25)</option>\n                                                                <option
+        value=\"1\">C (GCC 4.4.7)</option>\n                                                                <option
+        value=\"2\">C++ (GCC 4.4.7)</option>\n                                          </select>\n
+        \                                         <select class=\"submit-language-selector\"
+        name=\"language_id_733\" id=\"submit-language-selector-733\" style=\"display:none\">\n
+        \             \n                                                <option value=\"14\">C++
+        (G++ 4.6.4)</option>\n                                                                <option
+        value=\"13\">C (GCC 4.6.4)</option>\n                                                                <option
+        value=\"6\">D (DMD 2.060)</option>\n                                                                <option
+        value=\"3\">Java (OpenJDK 1.7.0)</option>\n                                                                <option
+        value=\"4\">C# (Mono 2.10.8.1)</option>\n                                                                <option
+        value=\"5\">PHP (PHP 5.3.10)</option>\n                                                                <option
+        value=\"21\">Python3 (3.2.3)</option>\n                                                                <option
+        value=\"7\">Python (2.7.3)</option>\n                                                                <option
+        value=\"8\">Perl (5.14.2)</option>\n                                                                <option
+        value=\"9\">Ruby (1.9.3)</option>\n                                                                <option
+        value=\"11\">Haskell (GHC 7.4.1)</option>\n                                                                <option
+        value=\"10\">C++11 (GCC 4.8.1)</option>\n                                                                <option
+        value=\"12\">Pascal (fpc 2.4.4)</option>\n                                                                <option
+        value=\"15\">JavaScript (Node.js 0.6.12)</option>\n                                                                <option
+        value=\"16\">Visual Basic (Mono 2.10.8)</option>\n                                                                <option
+        value=\"17\">Text (cat)</option>\n                                                                <option
+        value=\"22\">OCaml (3.12.1)</option>\n                                                                <option
+        value=\"23\">Scheme (Scheme 9.1)</option>\n                                                                <option
+        value=\"24\">Scala (2.9.1)</option>\n                                                                <option
+        value=\"25\">Bash (4.2.25)</option>\n                                                                <option
+        value=\"1\">C (GCC 4.4.7)</option>\n                                                                <option
+        value=\"2\">C++ (GCC 4.4.7)</option>\n                                          </select>\n
+        \                                         <select class=\"submit-language-selector\"
+        name=\"language_id_763\" id=\"submit-language-selector-763\" style=\"display:none\">\n
+        \             \n                                                <option value=\"14\">C++
+        (G++ 4.6.4)</option>\n                                                                <option
+        value=\"13\">C (GCC 4.6.4)</option>\n                                                                <option
+        value=\"6\">D (DMD 2.060)</option>\n                                                                <option
+        value=\"3\">Java (OpenJDK 1.7.0)</option>\n                                                                <option
+        value=\"4\">C# (Mono 2.10.8.1)</option>\n                                                                <option
+        value=\"5\">PHP (PHP 5.3.10)</option>\n                                                                <option
+        value=\"21\">Python3 (3.2.3)</option>\n                                                                <option
+        value=\"7\">Python (2.7.3)</option>\n                                                                <option
+        value=\"8\">Perl (5.14.2)</option>\n                                                                <option
+        value=\"9\">Ruby (1.9.3)</option>\n                                                                <option
+        value=\"11\">Haskell (GHC 7.4.1)</option>\n                                                                <option
+        value=\"10\">C++11 (GCC 4.8.1)</option>\n                                                                <option
+        value=\"12\">Pascal (fpc 2.4.4)</option>\n                                                                <option
+        value=\"15\">JavaScript (Node.js 0.6.12)</option>\n                                                                <option
+        value=\"16\">Visual Basic (Mono 2.10.8)</option>\n                                                                <option
+        value=\"17\">Text (cat)</option>\n                                                                <option
+        value=\"22\">OCaml (3.12.1)</option>\n                                                                <option
+        value=\"23\">Scheme (Scheme 9.1)</option>\n                                                                <option
+        value=\"24\">Scala (2.9.1)</option>\n                                                                <option
+        value=\"25\">Bash (4.2.25)</option>\n                                                                <option
+        value=\"1\">C (GCC 4.4.7)</option>\n                                                                <option
+        value=\"2\">C++ (GCC 4.4.7)</option>\n                                          </select>\n
+        \                       <p class=\"help-block\"><span class=\"lang\"><span
+        class=\"lang-en\"></span><span class=\"lang-ja\">※問題によって使用できる言語が異なる場合があります</span></span></p>\n
+        \         </div>\n        </div>\n\n        <div class=\"control-group\">\n
+        \         <label class=\"control-label\" for=\"source_code\"><span class=\"lang\"><span
+        class=\"lang-en\">Source code</span><span class=\"lang-ja\">ソースコード</span></span></label>\n
+        \         <div class=\"controls\">\n            <textarea name=\"source_code\"
+        class=\"input-xlarge span6\" rows=\"12\"></textarea>\n            <p class=\"help-block\">※<span
+        class=\"lang\"><span class=\"lang-en\">Not more than 60,000 UTF-8 characters.</span><span
+        class=\"lang-ja\">※UTF-8で60,000文字以下</span></span></p>\n            <p class=\"help-block\">※<span
+        class=\"lang\"><span class=\"lang-en\">Notice: Your source code will be saved
+        as Main.extension.</span><span class=\"lang-ja\">※ソースコードは Main.拡張子 で保存されます</span></span></p>\n
+        \         </div>\n        </div>\n\n        <div class=\"form-actions\">\n
+        \         <button type=\"submit\" class=\"btn btn-primary btn-large\">\n            <span
+        class=\"lang\"><span class=\"lang-en\">Submit your answer</span><span class=\"lang-ja\">ソースコードを提出する</span></span>\n
+        \         </button>\n        </div>\n      </fieldset>\n    </form>\n  </div>\n</div>\n\n\n
+        \   </div>\n\n    <footer>\n      <ul>\n  <li><a href=\"/tos\"><span class=\"lang\"><span
+        class=\"lang-en\">Terms of service</span><span class=\"lang-ja\">利用規約</span></span></a></li>\n
+        \ <li><a href=\"/privacy\"><span class=\"lang\"><span class=\"lang-en\">Privacy</span><span
+        class=\"lang-ja\">プライバシーポリシー</span></span></a></li>\n  <li><a href=\"/tutorial\"><span
+        class=\"lang\"><span class=\"lang-en\">Tutorial</span><span class=\"lang-ja\">チュートリアル</span></span></a></li>\n
+        \ <li><a href=\"/rules\"><span class=\"lang\"><span class=\"lang-en\">Rules</span><span
+        class=\"lang-ja\">ルール</span></span></a></li>\n  <li><a href=\"/glossary\"><span
+        class=\"lang\"><span class=\"lang-en\">Glossary</span><span class=\"lang-ja\">用語集</span></span></a></li>\n
+        \ <li><a href=\"/faq\"><span class=\"lang\"><span class=\"lang-en\">FAQ</span><span
+        class=\"lang-ja\">よくある質問</span></span></a></li>\n</ul>\n<p id=\"copyright\">&copy;
+        2015 AtCoder Inc. All rights reserved.</p>\n    </footer>\n\n    <p id=\"fixed-server-timer\"
+        style=\"display: none;\"></p>\n\n        <script src=\"/js/bootstrap.min.js\"></script>\n
+        \   <script src=\"/js/prettify.js\"></script>\n    <script src=\"/js/lang-vb.js\"></script>\n
+        \   <script src=\"/js/lang-hs.js\"></script>\n    <script src=\"/js/varmath.js\"></script>\n
+        \   <script src=\"/js/script.js?v=2\"></script>\n  </body>\n</html>\n"
+    http_version: 
+  recorded_at: Tue, 01 Mar 2016 07:55:41 GMT
+recorded_with: VCR 3.0.1

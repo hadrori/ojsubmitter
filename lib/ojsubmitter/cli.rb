@@ -40,6 +40,9 @@ module OJS
            aliases: "-n",
            type:    :boolean,
            desc:    "Don't show status page after submitting."
+    option :contest_id,
+           aliases: "-c",
+           desc:    "Specify a contest id of AtCoder"
     def submit
       @config = set_options_from_config_file(options.to_h)
       judge_class.submit @config
@@ -78,6 +81,8 @@ module OJS
         OJS.const_get @config['judge'].upcase
       when 'codeforces', 'cf'
         OJS::Codeforces
+      when 'atcoder'
+        OJS::AtCoder
       else
         raise UnknownJudgeError
       end

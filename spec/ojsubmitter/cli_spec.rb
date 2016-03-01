@@ -49,12 +49,13 @@ module OJS
     describe '#judge_class' do
       let(:cli) { CLI.new }
       context 'valid judge' do
-        before do
-          cli.instance_variable_set(:@config, { 'judge' => 'aoj' })
-        end
-
         it 'returns target judge class' do
+          cli.instance_variable_set(:@config, { 'judge' => 'aoj' })
           expect(cli.send(:judge_class)).to be OJS::AOJ
+          cli.instance_variable_set(:@config, { 'judge' => 'cf' })
+          expect(cli.send(:judge_class)).to be OJS::Codeforces
+          cli.instance_variable_set(:@config, { 'judge' => 'atcoder' })
+          expect(cli.send(:judge_class)).to be OJS::AtCoder
         end
       end
 
