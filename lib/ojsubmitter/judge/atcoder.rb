@@ -51,7 +51,7 @@ module OJS
       end
 
       def select_language(cands)
-        Logger.info "Two more languages are matched. Please select one."
+        Logger.info "Two or more languages are matched. Please select one."
         cands.each_with_index do |cand, idx|
           Logger.info "#{idx} : #{cand[1]}"
         end

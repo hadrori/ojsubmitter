@@ -187,7 +187,7 @@ Version infomation of Codeforces is [here](http://codeforces.com/blog/entry/79).
 
 #### AtCoder
 
-When you use this for submitting to atcoder, this tool will get languages list from atcoder and submit with matched language. If two more languages are matched, you have to select one.
+When you use this for submitting to atcoder, this tool will get languages list from atcoder and submit with matched language. If two or more languages are matched, you have to select one.
 
 #### Help
 
