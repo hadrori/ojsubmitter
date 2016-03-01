@@ -13,6 +13,7 @@ This gem helps you submit source code to online judges from command line interfa
 - [PKU JudgeOnline](http://poj.org)
 - [Sphere online judge](http://www.spoj.com)
 - [Codeforces](http://codeforces.com)
+- [AtCoder](http://atcoder.jp)
 
 You can also get this list from `ojsubmitter list` command.
 
@@ -32,7 +33,7 @@ You can set the default options of ojsubmitter command.
 
 #### Submit
 
-    $ ojsubmitter -j [JUDGE_NAME] -u [USER_NAME] -p [PASSWORD] -l [LANGUAGE] -f [SOURCE_FILE] -i [PROBLEM_ID]
+    $ ojsubmitter -j [JUDGE_NAME] -u [USER_NAME] -p [PASSWORD] -l [LANGUAGE] -f [SOURCE_FILE] -i [PROBLEM_ID] -c [CONTEST_ID]
 
 This command has too many options, so you can use `.ojsconf.yml` to set default options.
 After submitting, this will open the submission status page with web browser. If you don't want to open browser, please use `-n` option.
@@ -40,16 +41,17 @@ If you don't specify the problem id, this tool assume the problem id from file n
 
 #### Available judges and options to submit.
 
-| online judge | problem | judge (-j) | problem_id (-i) | file name (-f) |
-|:--|:--|:--:|:--:|:--:|
-| Aizu Online Judge | [0000](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=0000) | aoj | 0000 | 0000.cpp |
-| PKU Judge Online | [1000](http://poj.org/problem?id=1000) | poj | 1000 | 1000.cpp |
-| Sphere Online Judge | [PRIME1](http://www.spoj.com/problems/PRIME1/) | spoj | PRIME1 | prime1.cpp |
-| Codeforces | [1A](http://codeforces.com/problemset/problem/1/A) | cf, codeforces | 1A | 1A.cpp |
+| online judge | problem | judge (-j) | problem_id (-i) | file name (-f) | contest_id (-c) |
+|:--|:--:|:--:|:--:|:--:|:--:|
+| Aizu Online Judge | [0000](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=0000) | aoj | 0000 | 0000.cpp | |
+| PKU Judge Online | [1000](http://poj.org/problem?id=1000) | poj | 1000 | 1000.cpp | |
+| Sphere Online Judge | [PRIME1](http://www.spoj.com/problems/PRIME1/) | spoj | PRIME1 | prime1.cpp | |
+| Codeforces | [1A](http://codeforces.com/problemset/problem/1/A) | cf, codeforces | 1A | 1A.cpp | |
+| AtCoder | [abc001 A](http://abc001.contest.atcoder.jp/tasks/abc001_1) | atcoder | A | a.cpp | abc001 |
 
-When you submit to Codeforces and your file name is like `A.cpp`, this tool assume contest id from your current directory.   For example, if your current directory is `/path/to/cf/1` and file name is `A.cpp`, problem id will be `1A`.
 
-
+When you submit to Codeforces and your file name is like `A.cpp`, this tool assume contest id from your current directory.   For example, if your current directory is `/path/to/cf/1` and file name is `A.cpp`, problem id will be `1A`.  
+  
 #### Available languages
 
 All languages are case-insensitive.
