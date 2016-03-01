@@ -183,6 +183,9 @@ Version infomation of Codeforces is [here](http://codeforces.com/blog/entry/79).
 | Scala 2.11.7 | Scala |
 | JavaScript V8 4.8.0 | JavaScript |
 
+#### AtCoder
+
+When you use this for submitting to atcoder, this tool will get languages list from atcoder and submit with matched language. If two more languages are matched, you have to select one.
 
 #### Help
 
